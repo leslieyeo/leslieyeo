@@ -1,0 +1,33 @@
+name: Refresh profile star count
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Refresh star count
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update_stars.py
+
+      - name: Commit when the count changes
+        run: |
+          if [ -n "$(git status --porcelain README.md README.zh-CN.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md README.zh-CN.md
+            git commit -m "chore: refresh profile star count"
+            git push
+          else
+            echo "No changes."
+          fi
