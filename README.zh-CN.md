@@ -22,7 +22,7 @@
 
 ## ⭐ 代表作
 
-### 🧠 [serenity-reply](https://github.com/leslieyeo/serenity-reply) · <!--stars:serenity-reply-->127<!--/stars--> stars
+### 🧠 [serenity-reply](https://github.com/leslieyeo/serenity-reply) · <!--stars:serenity-reply-->128<!--/stars--> stars
 
 从 1,700 多条公开内容、长访谈、外部批评和评测记录中，蒸馏出的 AI 与半导体供应链分析思维框架。
 
