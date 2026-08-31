@@ -22,7 +22,7 @@ I care about making AI work useful, inspectable, and honest about its limits.
 
 ## ⭐ Featured
 
-### 🧠 [serenity-reply](https://github.com/leslieyeo/serenity-reply) · <!--stars:serenity-reply-->131<!--/stars--> stars
+### 🧠 [serenity-reply](https://github.com/leslieyeo/serenity-reply) · <!--stars:serenity-reply-->133<!--/stars--> stars
 
 A transparent thinking framework for AI and semiconductor supply-chain analysis, distilled from 1,700+ public posts, long-form interviews, external criticism, and documented evaluations.
 
